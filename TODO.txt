@@ -1,0 +1,5 @@
+logo
+change favicon
+projets page
+about me
+contact info

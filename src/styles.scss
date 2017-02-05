@@ -1,0 +1,46 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/core/theming/prebuilt/purple-green.scss';
+
+$fa-font-path: '~font-awesome/fonts';
+@import '~font-awesome/scss/font-awesome.scss';
+
+body {
+    background-color: #333333;
+}
+
+ul.unstyled {
+    list-style: none;
+    padding: 0;
+}
+
+.md-tabs-centered-wrapper {
+  margin: auto;
+  width: 84%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+md-card {
+    margin-top: 4px;
+}
+
+.centered {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.bold {
+    font-weight: bold !important;
+}
+
+.loading {
+    margin-top: calc(50vh - 50px);
+    text-align: center;
+    color: #9c27b0;
+    font-size: 50px;
+    font-weight: 100;
+    font-family: Roboto,"Helvetica Neue",sans-serif;
+}
