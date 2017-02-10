@@ -16,6 +16,13 @@ export class ProjectsComponent {
       repo: 'http://github.com/jafelker/uno',
       img: 'uno.png',
       description: 'This is a web app that I designed and implemented with a team of four for my UI class in college.'
+    },
+    {
+      title: 'Block Breaker',
+      link: 'http://joshuafelker.com/BlockBreaker',
+      repo: 'http://github.com/jafelker/BlockBreaker',
+      img: 'BlockBreaker.png',
+      description: 'This is my first game using Unity.'
     }
   ];
 }

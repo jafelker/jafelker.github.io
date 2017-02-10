@@ -1,0 +1,10 @@
+#!/bin/bash
+
+dir=../jafelker.github.io
+
+ng build
+cp -r dist/* $dir
+pushd $dir
+git commit -a
+git push
+popd
