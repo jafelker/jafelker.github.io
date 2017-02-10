@@ -225,6 +225,13 @@ var ProjectsComponent = (function () {
                 repo: 'http://github.com/jafelker/uno',
                 img: 'uno.png',
                 description: 'This is a web app that I designed and implemented with a team of four for my UI class in college.'
+            },
+            {
+                title: 'Block Breaker',
+                link: 'http://joshuafelker.com/BlockBreaker',
+                repo: 'http://github.com/jafelker/BlockBreaker',
+                img: 'BlockBreaker.png',
+                description: 'This is my first game using Unity.'
             }
         ];
     }
@@ -317,7 +324,7 @@ var environment = {
 /***/ 751:
 /***/ (function(module, exports) {
 
-module.exports = ".project-title * {\n  display: inline; }\n\n.project-title a {\n  text-decoration: underline; }\n\n.project-image {\n  width: 100%; }\n\n.project-list-item {\n  margin-top: 15px; }\n\n.project-description {\n  white-space: normal;\n  margin-top: 10px; }\n"
+module.exports = ".project-title {\n  text-align: center; }\n  .project-title * {\n    display: inline; }\n  .project-title a {\n    text-decoration: underline; }\n  .project-title small {\n    opacity: .6; }\n\n.project-image {\n  width: 100%; }\n\n.project-list-item {\n  margin-top: 15px; }\n\n.project-description {\n  white-space: normal;\n  margin-top: 10px;\n  text-align: center; }\n\n.project-div {\n  padding: 3px; }\n  .project-div md-card {\n    background-color: #555; }\n\n.project-img-container {\n  width: 50%;\n  margin: 0 auto; }\n"
 
 /***/ }),
 
@@ -366,7 +373,7 @@ module.exports = "<p>\n  9809 Chesaning Rd.<br>\n  Chesaning, Michigan 48616<br>
 /***/ 758:
 /***/ (function(module, exports) {
 
-module.exports = "<div *ngFor='let project of projects'>\n    <md-grid-list cols='3' class='project-list-item'>\n        <md-grid-tile class='project-info'>\n            <md-list>\n                <md-list-item>\n                    <span md-line class='project-title'>\n                        <a [href]='project.link'><h3 class='bold' [innerHTML]='project.title'></h3></a>\n                        <a [href]='project.repo'><small>Repo</small></a>\n                    </span>\n                    <p md-line class='project-description'>\n                        {{ project.description }}\n                    </p>\n                </md-list-item>\n            </md-list>\n        </md-grid-tile>\n        <md-grid-tile colspan='2'>\n            <a [href]='project.link'>\n                <img class='project-image' [src]='\"assets/images/\" + project.img' />\n            </a>\n        </md-grid-tile>\n    </md-grid-list>\n</div>\n"
+module.exports = "<div *ngFor='let project of projects' class='project-div'>\n    <md-card>\n        <md-card-content>\n            <div class='project-title'>\n                <a [href]='project.link'><h3 class='bold' [innerHTML]='project.title'></h3></a>\n                <a [href]='project.repo'><small>Repo</small></a>\n            </div>\n            <p class='project-description'>\n                {{ project.description }}\n            </p>\n            <div class='project-img-container'>\n                <a [href]='project.link'>\n                    <img class='project-image' [src]='\"assets/images/\" + project.img' title='Click to Play'/>\n                </a>\n            </div>\n        </md-card-content>\n    </md-card>\n</div>"
 
 /***/ }),
 
