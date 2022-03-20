@@ -1,0 +1,39 @@
+.project-title {
+    text-align: center;
+    * {
+        display: inline;
+    }
+
+    a {
+        text-decoration: underline;
+    }
+    small {
+        opacity: .6;
+    }
+}
+
+.project-image {
+    width: 100%;
+}
+
+.project-list-item {
+    margin-top: 15px;
+}
+
+.project-description {
+    white-space: normal;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.project-div {
+    padding: 3px;
+    mat-card {
+        background-color: #555;
+    }
+}
+
+.project-img-container {
+    width: 50%;
+    margin: 0 auto;
+}
