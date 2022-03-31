@@ -15,18 +15,18 @@ export class ProjectsComponent {
       description: 'Ludem Dare 49 was the first game jam I participated in. I entered into the jam with one other person.'
     },
     {
-      title: 'UNO&reg; Online!',
-      link: '/uno',
-      repo: 'http://github.com/jafelker/uno',
-      img: 'uno.png',
-      description: 'This is a web app that I designed and implemented with a team of four for my UI class in college.'
-    },
-    {
       title: 'Block Breaker',
       link: '/BlockBreaker',
       repo: 'http://github.com/jafelker/BlockBreaker',
       img: 'BlockBreaker.png',
       description: 'This is my first game using Unity.'
+    },
+    {
+      title: 'UNO&reg; Online!',
+      link: '/uno',
+      repo: 'http://github.com/jafelker/uno',
+      img: 'uno.png',
+      description: 'This is a web app that I designed and implemented with a team of four for my UI class in college.'
     },
   ];
 }
