@@ -108,7 +108,12 @@
           }
         },
         "deploy": {
-          "builder": "angular-cli-ghpages:deploy"
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "cname": "joshuafelker.com",
+            "name": "Joshua Felker",
+            "email": "jafelker4@gmail.com"
+          }
         }
       }
     }
